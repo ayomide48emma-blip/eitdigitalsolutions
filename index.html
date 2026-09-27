@@ -1,0 +1,1440 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EIT Digital Solutions | Graphic Design, Digital & Computer Services</title>
+    
+    <!-- SEO & Metadata -->
+    <meta name="description" content="EIT Digital Solutions provides professional graphic design, computer services, digital support and responsive website solutions in Ibadan, Nigeria.">
+    <meta name="keywords" content="Graphic Design, Graphic Designer Ibadan, Digital Services Ibadan, Computer Services, Website Design, Logo Design, Flyer Design, Business Branding, Digital Support, EIT Digital Solutions, Ogedengbe Emmanuel Itunu">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="EIT Digital Solutions | Graphic Design & Tech Services">
+    <meta property="og:description" content="Helping Individuals and Businesses Turn Ideas Into Professional Digital Solutions. Located in Ibadan, Nigeria.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://eitdigitalsolutions.com">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        eitBg: '#F7F7F2',
+                        eitDark: '#003B3B',
+                        eitLime: '#DFFF8F',
+                        eitCoral: '#FF6B3D',
+                        eitText: '#0B2020',
+                        eitCard: '#FFFFFF',
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        :root {
+            --bg-color: #F7F7F2;
+            --primary-dark: #003B3B;
+            --accent-lime: #DFFF8F;
+            --secondary-coral: #FF6B3D;
+            --text-main: #0B2020;
+            --card-bg: #FFFFFF;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Smooth scroll animations */
+        [data-animate] {
+            opacity: 0;
+            transform: translateY(25px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: opacity, transform;
+        }
+        [data-animate].is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Reduced motion support */
+        @media (prefers-reduced-motion: reduce) {
+            [data-animate] {
+                opacity: 1 !important;
+                transform: none !important;
+                transition: none !important;
+            }
+            .animate-pulse, .animate-bounce {
+                animation: none !important;
+            }
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #F7F7F2;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #003B3B;
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #002626;
+        }
+    </style>
+</head>
+<body class="bg-eitBg text-eitText antialiased selection:bg-eitLime selection:text-eitDark">
+
+    <!-- HEADER / NAVIGATION -->
+    <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-eitBg/90 backdrop-blur-md border-b border-eitDark/10 py-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-2 group">
+                <div class="w-10 h-10 rounded-xl bg-eitDark text-eitLime flex items-center justify-center font-extrabold text-xl shadow-md group-hover:scale-105 transition-transform">
+                    EIT
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-extrabold text-lg text-eitDark tracking-tight leading-none">EIT Digital</span>
+                    <span class="text-xs font-semibold text-eitCoral tracking-widest uppercase">Solutions</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden lg:flex items-center gap-8 font-medium text-sm text-eitText">
+                <a href="#home" class="hover:text-eitCoral transition-colors">Home</a>
+                <a href="#about" class="hover:text-eitCoral transition-colors">About</a>
+                <a href="#services" class="hover:text-eitCoral transition-colors">Services</a>
+                <a href="#portfolio" class="hover:text-eitCoral transition-colors">Portfolio</a>
+                <a href="#skills" class="hover:text-eitCoral transition-colors">Skills</a>
+                <a href="#experience" class="hover:text-eitCoral transition-colors">Experience</a>
+                <a href="#testimonials" class="hover:text-eitCoral transition-colors">Testimonials</a>
+                <a href="#contact" class="hover:text-eitCoral transition-colors">Contact</a>
+            </nav>
+
+            <!-- Desktop CTA -->
+            <div class="hidden lg:flex items-center gap-4">
+                <a href="https://wa.me/2349116359182?text=Hello%20EIT%20Digital%20Solutions,%20I%20would%20like%20to%20work%20with%20you." target="_blank" rel="noopener noreferrer" class="bg-eitDark text-eitLime hover:bg-eitDark/90 px-5 py-2.5 rounded-full font-bold text-sm shadow-lg hover:shadow-xl transition-all flex items-center gap-2 transform hover:-translate-y-0.5">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Let's Work Together</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-btn" class="lg:hidden text-eitDark p-2 focus:outline-none" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="lg:hidden absolute top-full left-0 right-0 bg-eitBg border-b border-eitDark/10 shadow-2xl py-6 px-6 hidden flex-col gap-4">
+            <a href="#home" class="mobile-link text-lg font-semibold text-eitDark hover:text-eitCoral">Home</a>
+            <a href="#about" class="mobile-link text-lg font-semibold text-eitDark hover:text-eitCoral">About</a>
+            <a href="#services" class="mobile-link text-lg font-semibold text-eitDark hover:text-eitCoral">Services</a>
+            <a href="#portfolio" class="mobile-link text-lg font-semibold text-eitDark hover:text-eitCoral">Portfolio</a>
+            <a href="#skills" class="mobile-link text-lg font-semibold text-eitDark hover:text-eitCoral">Skills</a>
+            <a href="#experience" class="mobile-link text-lg font-semibold text-eitDark hover:text-eitCoral">Experience</a>
+            <a href="#testimonials" class="mobile-link text-lg font-semibold text-eitDark hover:text-eitCoral">Testimonials</a>
+            <a href="#contact" class="mobile-link text-lg font-semibold text-eitDark hover:text-eitCoral">Contact</a>
+            <div class="pt-4 border-t border-eitDark/10">
+                <a href="https://wa.me/2349116359182?text=Hello%20EIT%20Digital%20Solutions,%20I%20would%20like%20to%20work%20with%20you." target="_blank" rel="noopener noreferrer" class="w-full bg-eitDark text-eitLime text-center py-3 rounded-xl font-bold block shadow-md">
+                    <i class="fa-brands fa-whatsapp mr-2"></i> Let's Work Together
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- HERO SECTION -->
+        <section id="home" class="relative pt-32 pb-20 lg:pt-44 lg:pb-32 overflow-hidden">
+            <div class="absolute top-20 right-[-10%] w-[500px] h-[500px] bg-eitLime/30 rounded-full blur-3xl pointer-events-none -z-10"></div>
+            <div class="absolute bottom-10 left-[-10%] w-[400px] h-[400px] bg-eitCoral/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <!-- Left Content -->
+                    <div class="lg:col-span-7 flex flex-col gap-6" data-animate>
+                        <div class="inline-flex items-center gap-2 bg-eitDark/5 border border-eitDark/10 px-4 py-2 rounded-full w-fit">
+                            <span class="w-2.5 h-2.5 rounded-full bg-eitCoral animate-pulse"></span>
+                            <span class="text-xs font-bold uppercase tracking-wider text-eitDark">Hello, I'm Emmanuel</span>
+                        </div>
+
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-eitDark leading-tight tracking-tight">
+                            Creative Design, <span class="text-eitCoral underline decoration-eitLime decoration-wavy decoration-2">Digital Services</span> & Technology Solutions.
+                        </h1>
+
+                        <p class="text-lg text-eitText/80 leading-relaxed max-w-2xl">
+                            I'm <strong class="text-eitDark">Ogedengbe Emmanuel Itunu</strong>, a graphic designer and digital support professional helping individuals and businesses create better designs, handle digital tasks and build practical technology solutions.
+                        </p>
+
+                        <div class="flex flex-wrap items-center gap-4 pt-2">
+                            <a href="#portfolio" class="bg-eitDark text-eitLime hover:bg-eitDark/90 px-8 py-4 rounded-2xl font-bold text-base shadow-xl transition-all transform hover:-translate-y-1 flex items-center gap-3">
+                                <span>View My Work</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                            <a href="https://wa.me/2349116359182?text=Hello%20Emmanuel,%20I%20found%20your%20website%20and%20want%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" class="bg-eitLime text-eitDark hover:bg-eitLime/80 px-8 py-4 rounded-2xl font-bold text-base shadow-md transition-all transform hover:-translate-y-1 flex items-center gap-3 border border-eitDark/10">
+                                <i class="fa-brands fa-whatsapp text-xl"></i>
+                                <span>Contact Me</span>
+                            </a>
+                        </div>
+
+                        <div class="flex items-center gap-6 pt-4 text-sm font-semibold text-eitText/70">
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-location-dot text-eitCoral"></i>
+                                <span>Ibadan, Oyo State, Nigeria</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-check-circle text-eitDark"></i>
+                                <span>Available for Hire</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Visual Area -->
+                    <div class="lg:col-span-5 relative" data-animate>
+                        <div class="relative mx-auto max-w-md lg:max-w-none">
+                            <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-eitDark group">
+                                <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80" alt="Emmanuel Workspace - EIT Digital Solutions" class="w-full h-[460px] object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
+                                <div class="absolute inset-0 bg-gradient-to-t from-eitDark via-transparent to-transparent opacity-80"></div>
+                                
+                                <div class="absolute bottom-6 left-6 right-6 text-white">
+                                    <span class="bg-eitLime text-eitDark text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Professional Hub</span>
+                                    <h3 class="text-xl font-bold mt-2">Design • Tech • Support</h3>
+                                    <p class="text-xs text-eitBg/80 mt-1">Transforming concepts into digital excellence.</p>
+                                </div>
+                            </div>
+
+                            <!-- Floating Cards -->
+                            <div class="absolute -top-6 -left-6 bg-white/95 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-eitDark/10 flex items-center gap-3 animate-bounce" style="animation-duration: 4s;">
+                                <div class="w-10 h-10 rounded-xl bg-eitLime/50 text-eitDark flex items-center justify-center font-bold">
+                                    <i class="fa-solid fa-pen-nib"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-gray-500 font-medium">Expertise</p>
+                                    <p class="text-sm font-bold text-eitDark">Graphic Design</p>
+                                </div>
+                            </div>
+
+                            <div class="absolute -bottom-6 -right-6 bg-eitDark text-white p-4 rounded-2xl shadow-xl flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-xl bg-eitCoral text-white flex items-center justify-center font-bold">
+                                    <i class="fa-solid fa-code"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-eitLime font-medium">Solutions</p>
+                                    <p class="text-sm font-bold">Web & Digital</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT ME -->
+        <section id="about" class="py-24 bg-white border-y border-eitDark/5">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16" data-animate>
+                    <span class="text-xs font-bold uppercase tracking-widest text-eitCoral bg-eitCoral/10 px-3 py-1 rounded-full">Who Am I</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-eitDark mt-3">About EIT Digital Solutions</h2>
+                    <p class="text-eitText/70 mt-3">Discover the passion, dedication, and expertise behind every project.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    <div class="lg:col-span-5" data-animate>
+                        <div class="relative">
+                            <div class="rounded-3xl overflow-hidden shadow-xl border-2 border-eitDark/10">
+                                <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80" alt="Ogedengbe Emmanuel Itunu" class="w-full h-[450px] object-cover">
+                            </div>
+                            <div class="absolute -bottom-6 -right-6 bg-eitLime text-eitDark p-6 rounded-3xl shadow-xl border border-eitDark/10 max-w-xs">
+                                <p class="text-2xl font-black">Pro</p>
+                                <p class="text-xs font-bold uppercase tracking-wider text-eitDark/80">Creative & Tech Professional</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-7 flex flex-col gap-6" data-animate>
+                        <h3 class="text-2xl sm:text-3xl font-bold text-eitDark">
+                            Creative Thinking. Practical Digital Solutions.
+                        </h3>
+                        <p class="text-eitText/80 leading-relaxed">
+                            EIT Digital Solutions provides creative design, computer services, digital support and web solutions for individuals, businesses, organizations and professionals. 
+                        </p>
+                        <p class="text-eitText/80 leading-relaxed">
+                            Led by <strong class="text-eitDark">Ogedengbe Emmanuel Itunu</strong> based in Ibadan, Oyo State, Nigeria, the business combines modern creativity and practical technology expertise to help clients solve everyday digital and business problems seamlessly.
+                        </p>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 py-2">
+                            <div class="bg-eitBg p-4 rounded-2xl border border-eitDark/5 flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-xl bg-eitDark text-eitLime flex items-center justify-center font-bold">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <div>
+                                    <span class="text-xs text-gray-500 block">Name</span>
+                                    <span class="font-bold text-eitDark text-sm">Ogedengbe Emmanuel Itunu</span>
+                                </div>
+                            </div>
+                            <div class="bg-eitBg p-4 rounded-2xl border border-eitDark/5 flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-xl bg-eitDark text-eitLime flex items-center justify-center font-bold">
+                                    <i class="fa-solid fa-location-crosshairs"></i>
+                                </div>
+                                <div>
+                                    <span class="text-xs text-gray-500 block">Location</span>
+                                    <span class="font-bold text-eitDark text-sm">Ibadan, Oyo State, Nigeria</span>
+                                </div>
+                            </div>
+                            <div class="bg-eitBg p-4 rounded-2xl border border-eitDark/5 flex items-center gap-3 sm:col-span-2">
+                                <div class="w-10 h-10 rounded-xl bg-eitDark text-eitLime flex items-center justify-center font-bold">
+                                    <i class="fa-solid fa-bullseye"></i>
+                                </div>
+                                <div>
+                                    <span class="text-xs text-gray-500 block">Focus</span>
+                                    <span class="font-bold text-eitDark text-sm">Graphic Design • Computer Services • Digital Support</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-2">
+                            <a href="https://wa.me/2349116359182?text=Hello%20Emmanuel,%20let's%20work%20together!" target="_blank" rel="noopener noreferrer" class="bg-eitDark text-eitLime hover:bg-eitDark/90 px-8 py-3.5 rounded-xl font-bold inline-flex items-center gap-2 shadow-lg transition-all">
+                                <i class="fa-brands fa-whatsapp text-lg"></i>
+                                <span>Let's Work Together</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section id="services" class="py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16" data-animate>
+                    <span class="text-xs font-bold uppercase tracking-widest text-eitCoral bg-eitCoral/10 px-3 py-1 rounded-full">What I Do</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-eitDark mt-3">Professional Services</h2>
+                    <p class="text-eitText/70 mt-3">Professional creative and digital services designed to help your ideas, business and everyday tasks move forward.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    
+                    <!-- Service 1 -->
+                    <div class="bg-white p-8 rounded-3xl shadow-lg border border-eitDark/5 flex flex-col justify-between hover:-translate-y-2 transition-all duration-300 group" data-animate>
+                        <div>
+                            <div class="w-14 h-14 rounded-2xl bg-eitLime/70 text-eitDark flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-eitDark group-hover:text-eitLime transition-colors">
+                                <i class="fa-solid fa-palette"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-eitDark mb-3">Graphic Design</h3>
+                            <p class="text-eitText/70 text-sm leading-relaxed mb-6">
+                                Professional visual designs that help businesses, organizations and individuals communicate clearly and professionally.
+                            </p>
+                            <ul class="space-y-2 text-xs font-semibold text-eitText/80 mb-6">
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-eitCoral"></i> Logo Design</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-eitCoral"></i> Flyer & Poster Design</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-eitCoral"></i> Banner Design</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-eitCoral"></i> Business Card & ID Card</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-eitCoral"></i> Canva & CorelDRAW</li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/2349116359182?text=Hi%20Emmanuel,%20I%20am%20interested%20in%20your%20Graphic%20Design%20services." target="_blank" rel="noopener noreferrer" class="w-full bg-eitBg text-eitDark hover:bg-eitDark hover:text-eitLime py-3 rounded-xl font-bold text-center text-sm transition-colors block">
+                            Get Started
+                        </a>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="bg-white p-8 rounded-3xl shadow-lg border border-eitDark/5 flex flex-col justify-between hover:-translate-y-2 transition-all duration-300 group" data-animate>
+                        <div>
+                            <div class="w-14 h-14 rounded-2xl bg-eitLime/70 text-eitDark flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-eitDark group-hover:text-eitLime transition-colors">
+                                <i class="fa-solid fa-computer"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-eitDark mb-3">Computer & Digital Services</h3>
+                            <p class="text-eitText/70 text-sm leading-relaxed mb-6">
+                                Reliable digital assistance for documents, online tasks, data entry and everyday computer needs.
+                            </p>
+                            <ul class="space-y-2 text-xs font-semibold text-eitText/80 mb-6">
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-eitCoral"></i> Microsoft Word & Excel</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-eitCoral"></i> Google Docs & Formatting</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-eitCoral"></i> Professional Typing</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-eitCoral"></i> Online Registrations</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-eitCoral"></i> Cyber Café Services</li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/2349116359182?text=Hi%20Emmanuel,%20I%20am%20interested%20in%20your%20Computer%20and%20Digital%20Services." target="_blank" rel="noopener noreferrer" class="w-full bg-eitBg text-eitDark hover:bg-eitDark hover:text-eitLime py-3 rounded-xl font-bold text-center text-sm transition-colors block">
+                            Get Started
+                        </a>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="bg-white p-8 rounded-3xl shadow-lg border border-eitDark/5 flex flex-col justify-between hover:-translate-y-2 transition-all duration-300 group" data-animate>
+                        <div>
+                            <div class="w-14 h-14 rounded-2xl bg-eitLime/70 text-eitDark flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-eitDark group-hover:text-eitLime transition-colors">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-eitDark mb-3">Web Design</h3>
+                            <p class="text-eitText/70 text-sm leading-relaxed mb-6">
+                                Responsive and modern websites for individuals, professionals and small businesses.
+                            </p>
+                            <ul class="space-y-2 text-xs font-semibold text-eitText/80 mb-6">
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-eitCoral"></i> HTML, CSS & JavaScript</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-eitCoral"></i> Responsive Website Design</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-eitCoral"></i> Personal Portfolio Websites</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-eitCoral"></i> Small Business Websites</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-eitCoral"></i> Basic Customization</li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/2349116359182?text=Hi%20Emmanuel,%20I%20am%20interested%20in%20your%20Web%20Design%20services." target="_blank" rel="noopener noreferrer" class="w-full bg-eitBg text-eitDark hover:bg-eitDark hover:text-eitLime py-3 rounded-xl font-bold text-center text-sm transition-colors block">
+                            Get Started
+                        </a>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="bg-white p-8 rounded-3xl shadow-lg border border-eitDark/5 flex flex-col justify-between hover:-translate-y-2 transition-all duration-300 group" data-animate>
+                        <div>
+                            <div class="w-14 h-14 rounded-2xl bg-eitLime/70 text-eitDark flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-eitDark group-hover:text-eitLime transition-colors">
+                                <i class="fa-solid fa-headset"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-eitDark mb-3">Business & Digital Support</h3>
+                            <p class="text-eitText/70 text-sm leading-relaxed mb-6">
+                                Practical support for individuals and businesses that need help completing digital tasks.
+                            </p>
+                            <ul class="space-y-2 text-xs font-semibold text-eitText/80 mb-6">
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-eitCoral"></i> Internet Research</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-eitCoral"></i> Email Communication</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-eitCoral"></i> Online Applications</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-eitCoral"></i> Printing & Digital Docs</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-eitCoral"></i> Administrative Support</li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/2349116359182?text=Hi%20Emmanuel,%20I%20am%20interested%20in%20Business%20and%20Digital%20Support." target="_blank" rel="noopener noreferrer" class="w-full bg-eitBg text-eitDark hover:bg-eitDark hover:text-eitLime py-3 rounded-xl font-bold text-center text-sm transition-colors block">
+                            Get Started
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS & TOOLS -->
+        <section id="skills" class="py-24 bg-white border-y border-eitDark/5">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16" data-animate>
+                    <span class="text-xs font-bold uppercase tracking-widest text-eitCoral bg-eitCoral/10 px-3 py-1 rounded-full">Expertise</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-eitDark mt-3">My Skills & Tools</h2>
+                    <p class="text-eitText/70 mt-3">Proficient in standard software and modern technologies to deliver top-tier output.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <!-- Design Skills -->
+                    <div class="bg-eitBg p-8 rounded-3xl border border-eitDark/5 shadow-md" data-animate>
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-12 h-12 rounded-xl bg-eitDark text-eitLime flex items-center justify-center font-bold text-lg">
+                                <i class="fa-solid fa-paintbrush"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-eitDark">Design</h3>
+                        </div>
+
+                        <div class="space-y-5">
+                            <div>
+                                <div class="flex justify-between text-sm font-semibold text-eitText mb-1.5">
+                                    <span>CorelDRAW</span>
+                                    <span class="text-eitDark font-bold">Advanced</span>
+                                </div>
+                                <div class="w-full bg-gray-200 h-2.5 rounded-full overflow-hidden">
+                                    <div class="bg-eitDark h-full rounded-full transition-all duration-1000 skill-bar" style="width: 0%" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-sm font-semibold text-eitText mb-1.5">
+                                    <span>Canva</span>
+                                    <span class="text-eitDark font-bold">Expert</span>
+                                </div>
+                                <div class="w-full bg-gray-200 h-2.5 rounded-full overflow-hidden">
+                                    <div class="bg-eitDark h-full rounded-full transition-all duration-1000 skill-bar" style="width: 0%" data-width="95%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-sm font-semibold text-eitText mb-1.5">
+                                    <span>Graphic Design & Branding</span>
+                                    <span class="text-eitDark font-bold">Advanced</span>
+                                </div>
+                                <div class="w-full bg-gray-200 h-2.5 rounded-full overflow-hidden">
+                                    <div class="bg-eitDark h-full rounded-full transition-all duration-1000 skill-bar" style="width: 0%" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-sm font-semibold text-eitText mb-1.5">
+                                    <span>Social Media Design</span>
+                                    <span class="text-eitDark font-bold">Advanced</span>
+                                </div>
+                                <div class="w-full bg-gray-200 h-2.5 rounded-full overflow-hidden">
+                                    <div class="bg-eitDark h-full rounded-full transition-all duration-1000 skill-bar" style="width: 0%" data-width="85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Computer Skills -->
+                    <div class="bg-eitBg p-8 rounded-3xl border border-eitDark/5 shadow-md" data-animate>
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-12 h-12 rounded-xl bg-eitDark text-eitLime flex items-center justify-center font-bold text-lg">
+                                <i class="fa-solid fa-file-lines"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-eitDark">Computer & Office</h3>
+                        </div>
+
+                        <div class="space-y-5">
+                            <div>
+                                <div class="flex justify-between text-sm font-semibold text-eitText mb-1.5">
+                                    <span>Microsoft Word</span>
+                                    <span class="text-eitDark font-bold">Expert</span>
+                                </div>
+                                <div class="w-full bg-gray-200 h-2.5 rounded-full overflow-hidden">
+                                    <div class="bg-eitDark h-full rounded-full transition-all duration-1000 skill-bar" style="width: 0%" data-width="95%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-sm font-semibold text-eitText mb-1.5">
+                                    <span>Microsoft Excel</span>
+                                    <span class="text-eitDark font-bold">Advanced</span>
+                                </div>
+                                <div class="w-full bg-gray-200 h-2.5 rounded-full overflow-hidden">
+                                    <div class="bg-eitDark h-full rounded-full transition-all duration-1000 skill-bar" style="width: 0%" data-width="85%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-sm font-semibold text-eitText mb-1.5">
+                                    <span>Google Docs & Sheets</span>
+                                    <span class="text-eitDark font-bold">Advanced</span>
+                                </div>
+                                <div class="w-full bg-gray-200 h-2.5 rounded-full overflow-hidden">
+                                    <div class="bg-eitDark h-full rounded-full transition-all duration-1000 skill-bar" style="width: 0%" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-sm font-semibold text-eitText mb-1.5">
+                                    <span>Data Entry & Formatting</span>
+                                    <span class="text-eitDark font-bold">Expert</span>
+                                </div>
+                                <div class="w-full bg-gray-200 h-2.5 rounded-full overflow-hidden">
+                                    <div class="bg-eitDark h-full rounded-full transition-all duration-1000 skill-bar" style="width: 0%" data-width="95%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Web Tech Skills -->
+                    <div class="bg-eitBg p-8 rounded-3xl border border-eitDark/5 shadow-md" data-animate>
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-12 h-12 rounded-xl bg-eitDark text-eitLime flex items-center justify-center font-bold text-lg">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-eitDark">Web Technologies</h3>
+                        </div>
+
+                        <div class="space-y-5">
+                            <div>
+                                <div class="flex justify-between text-sm font-semibold text-eitText mb-1.5">
+                                    <span>HTML5</span>
+                                    <span class="text-eitDark font-bold">Intermediate</span>
+                                </div>
+                                <div class="w-full bg-gray-200 h-2.5 rounded-full overflow-hidden">
+                                    <div class="bg-eitDark h-full rounded-full transition-all duration-1000 skill-bar" style="width: 0%" data-width="80%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-sm font-semibold text-eitText mb-1.5">
+                                    <span>CSS3</span>
+                                    <span class="text-eitDark font-bold">Intermediate</span>
+                                </div>
+                                <div class="w-full bg-gray-200 h-2.5 rounded-full overflow-hidden">
+                                    <div class="bg-eitDark h-full rounded-full transition-all duration-1000 skill-bar" style="width: 0%" data-width="80%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-sm font-semibold text-eitText mb-1.5">
+                                    <span>JavaScript (Vanilla)</span>
+                                    <span class="text-eitDark font-bold">Intermediate</span>
+                                </div>
+                                <div class="w-full bg-gray-200 h-2.5 rounded-full overflow-hidden">
+                                    <div class="bg-eitDark h-full rounded-full transition-all duration-1000 skill-bar" style="width: 0%" data-width="75%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-sm font-semibold text-eitText mb-1.5">
+                                    <span>Responsive Design</span>
+                                    <span class="text-eitDark font-bold">Advanced</span>
+                                </div>
+                                <div class="w-full bg-gray-200 h-2.5 rounded-full overflow-hidden">
+                                    <div class="bg-eitDark h-full rounded-full transition-all duration-1000 skill-bar" style="width: 0%" data-width="85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section id="experience" class="py-24">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16" data-animate>
+                    <span class="text-xs font-bold uppercase tracking-widest text-eitCoral bg-eitCoral/10 px-3 py-1 rounded-full">Career Path</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-eitDark mt-3">Experience & Digital Support</h2>
+                    <p class="text-eitText/70 mt-3">Professional hands-on background in computer operations and cyber café administration.</p>
+                </div>
+
+                <div class="relative border-l-2 border-eitDark/20 ml-4 sm:ml-8 pl-6 sm:pl-10 space-y-12">
+                    <div class="relative group" data-animate>
+                        <div class="absolute -left-[37px] sm:-left-[53px] top-0 w-8 h-8 rounded-full bg-eitDark text-eitLime flex items-center justify-center font-bold shadow-md">
+                            <i class="fa-solid fa-briefcase text-xs"></i>
+                        </div>
+
+                        <div class="bg-white p-8 rounded-3xl shadow-lg border border-eitDark/5">
+                            <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
+                                <span class="bg-eitLime text-eitDark text-xs font-bold px-3 py-1 rounded-full">Professional Experience</span>
+                                <span class="text-xs font-semibold text-eitCoral">Ibadan, Nigeria</span>
+                            </div>
+                            <h3 class="text-xl sm:text-2xl font-extrabold text-eitDark mb-2">Computer Operator / Cyber Café Services</h3>
+                            <p class="text-eitCoral font-semibold text-sm mb-4">EIT Digital Solutions & Partner Operations</p>
+                            <p class="text-eitText/80 text-sm leading-relaxed mb-6">
+                                Providing expert hands-on computer operations, customer support, and administrative solutions with high accuracy and fast turnaround times.
+                            </p>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                                <div class="bg-eitBg p-3 rounded-xl text-xs font-semibold text-eitText flex items-center gap-2">
+                                    <i class="fa-solid fa-chevron-right text-eitCoral text-[10px]"></i> Computer operations & maintenance
+                                </div>
+                                <div class="bg-eitBg p-3 rounded-xl text-xs font-semibold text-eitText flex items-center gap-2">
+                                    <i class="fa-solid fa-chevron-right text-eitCoral text-[10px]"></i> Customer support & consultation
+                                </div>
+                                <div class="bg-eitBg p-3 rounded-xl text-xs font-semibold text-eitText flex items-center gap-2">
+                                    <i class="fa-solid fa-chevron-right text-eitCoral text-[10px]"></i> Online applications & registrations
+                                </div>
+                                <div class="bg-eitBg p-3 rounded-xl text-xs font-semibold text-eitText flex items-center gap-2">
+                                    <i class="fa-solid fa-chevron-right text-eitCoral text-[10px]"></i> Document preparation & typing
+                                </div>
+                                <div class="bg-eitBg p-3 rounded-xl text-xs font-semibold text-eitText flex items-center gap-2">
+                                    <i class="fa-solid fa-chevron-right text-eitCoral text-[10px]"></i> Internet services & web research
+                                </div>
+                                <div class="bg-eitBg p-3 rounded-xl text-xs font-semibold text-eitText flex items-center gap-2">
+                                    <i class="fa-solid fa-chevron-right text-eitCoral text-[10px]"></i> Data entry & spreadsheet management
+                                </div>
+                                <div class="bg-eitBg p-3 rounded-xl text-xs font-semibold text-eitText flex items-center gap-2">
+                                    <i class="fa-solid fa-chevron-right text-eitCoral text-[10px]"></i> Printing & digital document services
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO / MY WORK -->
+        <section id="portfolio" class="py-24 bg-white border-y border-eitDark/5">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-12" data-animate>
+                    <span class="text-xs font-bold uppercase tracking-widest text-eitCoral bg-eitCoral/10 px-3 py-1 rounded-full">My Portfolio</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-eitDark mt-3">Recent Work</h2>
+                    <p class="text-eitText/70 mt-3">A selection of creative, digital and technology projects.</p>
+                </div>
+
+                <!-- Portfolio Filters -->
+                <div class="flex flex-wrap justify-center gap-2 mb-12" data-animate>
+                    <button class="filter-btn active bg-eitDark text-eitLime px-6 py-2.5 rounded-full text-sm font-bold shadow-md transition-all" data-filter="all">All</button>
+                    <button class="filter-btn bg-eitBg text-eitText hover:bg-eitDark/10 px-6 py-2.5 rounded-full text-sm font-semibold transition-all" data-filter="graphic">Graphic Design</button>
+                    <button class="filter-btn bg-eitBg text-eitText hover:bg-eitDark/10 px-6 py-2.5 rounded-full text-sm font-semibold transition-all" data-filter="branding">Branding</button>
+                    <button class="filter-btn bg-eitBg text-eitText hover:bg-eitDark/10 px-6 py-2.5 rounded-full text-sm font-semibold transition-all" data-filter="web">Web Design</button>
+                    <button class="filter-btn bg-eitBg text-eitText hover:bg-eitDark/10 px-6 py-2.5 rounded-full text-sm font-semibold transition-all" data-filter="digital">Digital Services</button>
+                </div>
+
+                <!-- Portfolio Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="portfolio-grid">
+                    
+                    <!-- Item 1 -->
+                    <div class="portfolio-item bg-eitBg rounded-3xl overflow-hidden shadow-md border border-eitDark/5 group cursor-pointer" data-category="graphic" data-title="Business Logo Design" data-desc="Modern minimalist logo crafted for corporate branding and digital presence." data-tools="CorelDRAW, Canva" data-animate>
+                        <div class="relative overflow-hidden h-64 bg-eitDark">
+                            <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=800&q=80" alt="Business Logo Design" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-eitDark/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <span class="bg-white text-eitDark font-bold px-4 py-2 rounded-xl text-sm shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-transform">View Project</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-bold uppercase tracking-wider text-eitCoral">Graphic Design</span>
+                            <h3 class="text-xl font-bold text-eitDark mt-1">Business Logo Design</h3>
+                            <p class="text-xs text-eitText/70 mt-2">Modern minimalist logo crafted for corporate branding.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="portfolio-item bg-eitBg rounded-3xl overflow-hidden shadow-md border border-eitDark/5 group cursor-pointer" data-category="graphic" data-title="Promotional Flyer Design" data-desc="Eye-catching promotional flyer created for business marketing campaigns." data-tools="Canva, CorelDRAW" data-animate>
+                        <div class="relative overflow-hidden h-64 bg-eitDark">
+                            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80" alt="Promotional Flyer Design" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-eitDark/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <span class="bg-white text-eitDark font-bold px-4 py-2 rounded-xl text-sm shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-transform">View Project</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-bold uppercase tracking-wider text-eitCoral">Graphic Design</span>
+                            <h3 class="text-xl font-bold text-eitDark mt-1">Promotional Flyer Design</h3>
+                            <p class="text-xs text-eitText/70 mt-2">Eye-catching promotional flyer created for business marketing.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="portfolio-item bg-eitBg rounded-3xl overflow-hidden shadow-md border border-eitDark/5 group cursor-pointer" data-category="branding" data-title="Social Media Brand Design" data-desc="Cohesive social media banner and branding package for online visibility." data-tools="Canva" data-animate>
+                        <div class="relative overflow-hidden h-64 bg-eitDark">
+                            <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80" alt="Social Media Brand Design" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-eitDark/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <span class="bg-white text-eitDark font-bold px-4 py-2 rounded-xl text-sm shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-transform">View Project</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-bold uppercase tracking-wider text-eitCoral">Branding</span>
+                            <h3 class="text-xl font-bold text-eitDark mt-1">Social Media Brand Design</h3>
+                            <p class="text-xs text-eitText/70 mt-2">Cohesive social media banner and branding package.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="portfolio-item bg-eitBg rounded-3xl overflow-hidden shadow-md border border-eitDark/5 group cursor-pointer" data-category="branding" data-title="Business Card Design" data-desc="Professional and sleek business cards reflecting high standard corporate identity." data-tools="CorelDRAW" data-animate>
+                        <div class="relative overflow-hidden h-64 bg-eitDark">
+                            <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=800&q=80" alt="Business Card Design" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-eitDark/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <span class="bg-white text-eitDark font-bold px-4 py-2 rounded-xl text-sm shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-transform">View Project</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-bold uppercase tracking-wider text-eitCoral">Branding</span>
+                            <h3 class="text-xl font-bold text-eitDark mt-1">Business Card Design</h3>
+                            <p class="text-xs text-eitText/70 mt-2">Professional and sleek business cards reflecting identity.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 5 -->
+                    <div class="portfolio-item bg-eitBg rounded-3xl overflow-hidden shadow-md border border-eitDark/5 group cursor-pointer" data-category="graphic" data-title="Church / Event Flyer" data-desc="Vibrant event poster designed for community gatherings and special programs." data-tools="CorelDRAW, Canva" data-animate>
+                        <div class="relative overflow-hidden h-64 bg-eitDark">
+                            <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=80" alt="Church / Event Flyer" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-eitDark/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <span class="bg-white text-eitDark font-bold px-4 py-2 rounded-xl text-sm shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-transform">View Project</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-bold uppercase tracking-wider text-eitCoral">Graphic Design</span>
+                            <h3 class="text-xl font-bold text-eitDark mt-1">Church / Event Flyer</h3>
+                            <p class="text-xs text-eitText/70 mt-2">Vibrant event poster designed for special programs.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 6 -->
+                    <div class="portfolio-item bg-eitBg rounded-3xl overflow-hidden shadow-md border border-eitDark/5 group cursor-pointer" data-category="web" data-title="Responsive Business Website" data-desc="Clean, responsive multi-section website built with modern HTML, CSS, and JavaScript." data-tools="HTML, CSS, JavaScript" data-animate>
+                        <div class="relative overflow-hidden h-64 bg-eitDark">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Responsive Business Website" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-eitDark/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <span class="bg-white text-eitDark font-bold px-4 py-2 rounded-xl text-sm shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-transform">View Project</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-bold uppercase tracking-wider text-eitCoral">Web Design</span>
+                            <h3 class="text-xl font-bold text-eitDark mt-1">Responsive Business Website</h3>
+                            <p class="text-xs text-eitText/70 mt-2">Clean, responsive multi-section website built with code.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO MODAL LIGHTBOX -->
+        <div id="portfolio-modal" class="fixed inset-0 z-50 bg-eitDark/80 backdrop-blur-md hidden items-center justify-center p-4">
+            <div class="bg-white max-w-2xl w-full rounded-3xl overflow-hidden shadow-2xl relative animate-in fade-in zoom-in duration-300">
+                <button id="modal-close" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-eitBg text-eitDark flex items-center justify-center font-bold text-lg hover:bg-eitCoral hover:text-white transition-colors z-10">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <div class="h-72 bg-eitDark relative">
+                    <img id="modal-img" src="" alt="Project Preview" class="w-full h-full object-cover">
+                </div>
+                <div class="p-8">
+                    <span id="modal-category" class="text-xs font-bold uppercase tracking-wider text-eitCoral bg-eitCoral/10 px-3 py-1 rounded-full"></span>
+                    <h3 id="modal-title" class="text-2xl font-extrabold text-eitDark mt-3"></h3>
+                    <p id="modal-desc" class="text-eitText/80 text-sm mt-3 leading-relaxed"></p>
+                    <div class="mt-4 p-3 bg-eitBg rounded-xl text-xs font-semibold text-eitText">
+                        <strong>Tools Used:</strong> <span id="modal-tools"></span>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-eitDark/10 flex items-center justify-end">
+                        <a href="https://wa.me/2349116359182?text=Hello%20Emmanuel,%20I%20want%20to%20inquire%20about%20a%20project%20similar%20to%20your%20portfolio." target="_blank" rel="noopener noreferrer" class="bg-eitDark text-eitLime px-6 py-3 rounded-xl text-sm font-bold shadow-md hover:bg-eitDark/90 transition-all flex items-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-lg"></i> Inquire About Similar Project
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- WHY CHOOSE EIT DIGITAL SOLUTIONS -->
+        <section class="py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16" data-animate>
+                    <span class="text-xs font-bold uppercase tracking-widest text-eitCoral bg-eitCoral/10 px-3 py-1 rounded-full">Benefits</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-eitDark mt-3">Why Work With Me?</h2>
+                    <p class="text-eitText/70 mt-3">Committed to excellence, professionalism, and timely delivery.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white p-8 rounded-3xl shadow-lg border border-eitDark/5 relative overflow-hidden group hover:-translate-y-2 transition-all duration-300" data-animate>
+                        <span class="absolute top-4 right-6 text-5xl font-black text-eitDark/5 group-hover:text-eitLime/50 transition-colors">01</span>
+                        <h3 class="text-xl font-bold text-eitDark mb-3">Creative Approach</h3>
+                        <p class="text-eitText/70 text-sm leading-relaxed">Design solutions focused on clarity, professionalism and visual impact.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-3xl shadow-lg border border-eitDark/5 relative overflow-hidden group hover:-translate-y-2 transition-all duration-300" data-animate>
+                        <span class="absolute top-4 right-6 text-5xl font-black text-eitDark/5 group-hover:text-eitLime/50 transition-colors">02</span>
+                        <h3 class="text-xl font-bold text-eitDark mb-3">Practical Digital Support</h3>
+                        <p class="text-eitText/70 text-sm leading-relaxed">Reliable assistance with everyday computer and digital tasks.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-3xl shadow-lg border border-eitDark/5 relative overflow-hidden group hover:-translate-y-2 transition-all duration-300" data-animate>
+                        <span class="absolute top-4 right-6 text-5xl font-black text-eitDark/5 group-hover:text-eitLime/50 transition-colors">03</span>
+                        <h3 class="text-xl font-bold text-eitDark mb-3">Business Focused</h3>
+                        <p class="text-eitText/70 text-sm leading-relaxed">Solutions designed to help individuals and businesses present themselves professionally.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-3xl shadow-lg border border-eitDark/5 relative overflow-hidden group hover:-translate-y-2 transition-all duration-300" data-animate>
+                        <span class="absolute top-4 right-6 text-5xl font-black text-eitDark/5 group-hover:text-eitLime/50 transition-colors">04</span>
+                        <h3 class="text-xl font-bold text-eitDark mb-3">Client Friendly</h3>
+                        <p class="text-eitText/70 text-sm leading-relaxed">Clear communication and a straightforward approach from start to finish.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS -->
+        <section id="testimonials" class="py-24 bg-white border-y border-eitDark/5">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16" data-animate>
+                    <span class="text-xs font-bold uppercase tracking-widest text-eitCoral bg-eitCoral/10 px-3 py-1 rounded-full">Testimonials</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-eitDark mt-3">What Clients Say</h2>
+                    <p class="text-eitText/70 mt-3">Feedback from valued clients and partners.</p>
+                </div>
+
+                <div class="relative max-w-4xl mx-auto" data-animate>
+                    <div class="overflow-hidden" id="testimonial-slider">
+                        <div class="flex transition-transform duration-500 ease-in-out" id="testimonial-track">
+                            
+                            <!-- Testimonial 1 -->
+                            <div class="w-full flex-shrink-0 px-4">
+                                <div class="bg-eitBg p-8 sm:p-12 rounded-3xl border border-eitDark/5 shadow-md relative">
+                                    <div class="text-eitCoral text-4xl mb-4"><i class="fa-solid fa-quote-left"></i></div>
+                                    <p class="text-lg sm:text-xl font-medium text-eitText italic leading-relaxed mb-8">
+                                        "Client testimonial will be added here. (Editable placeholder for future client reviews and feedback)."
+                                    </p>
+                                    <div class="flex items-center gap-4">
+                                        <div class="w-14 h-14 rounded-full bg-eitDark text-eitLime flex items-center justify-center font-bold text-xl">
+                                            C1
+                                        </div>
+                                        <div>
+                                            <h4 class="font-bold text-eitDark text-lg">Client Name</h4>
+                                            <p class="text-xs text-gray-500 font-semibold">Business Owner / Partner</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Testimonial 2 -->
+                            <div class="w-full flex-shrink-0 px-4">
+                                <div class="bg-eitBg p-8 sm:p-12 rounded-3xl border border-eitDark/5 shadow-md relative">
+                                    <div class="text-eitCoral text-4xl mb-4"><i class="fa-solid fa-quote-left"></i></div>
+                                    <p class="text-lg sm:text-xl font-medium text-eitText italic leading-relaxed mb-8">
+                                        "Client testimonial will be added here. (Editable placeholder for future client reviews and feedback)."
+                                    </p>
+                                    <div class="flex items-center gap-4">
+                                        <div class="w-14 h-14 rounded-full bg-eitDark text-eitLime flex items-center justify-center font-bold text-xl">
+                                            C2
+                                        </div>
+                                        <div>
+                                            <h4 class="font-bold text-eitDark text-lg">Client Name</h4>
+                                            <p class="text-xs text-gray-500 font-semibold">Small Business Enterprise</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Testimonial 3 -->
+                            <div class="w-full flex-shrink-0 px-4">
+                                <div class="bg-eitBg p-8 sm:p-12 rounded-3xl border border-eitDark/5 shadow-md relative">
+                                    <div class="text-eitCoral text-4xl mb-4"><i class="fa-solid fa-quote-left"></i></div>
+                                    <p class="text-lg sm:text-xl font-medium text-eitText italic leading-relaxed mb-8">
+                                        "Client testimonial will be added here. (Editable placeholder for future client reviews and feedback)."
+                                    </p>
+                                    <div class="flex items-center gap-4">
+                                        <div class="w-14 h-14 rounded-full bg-eitDark text-eitLime flex items-center justify-center font-bold text-xl">
+                                            C3
+                                        </div>
+                                        <div>
+                                            <h4 class="font-bold text-eitDark text-lg">Client Name</h4>
+                                            <p class="text-xs text-gray-500 font-semibold">Professional Client</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Carousel Controls -->
+                    <div class="flex justify-center items-center gap-4 mt-8">
+                        <button id="prev-testimonial" class="w-12 h-12 rounded-full bg-eitDark text-eitLime flex items-center justify-center shadow-md hover:bg-eitDark/90 transition-colors" aria-label="Previous Testimonial">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </button>
+                        <div class="flex gap-2" id="carousel-dots">
+                            <button class="w-3 h-3 rounded-full bg-eitDark transition-colors" data-index="0" aria-label="Slide 1"></button>
+                            <button class="w-3 h-3 rounded-full bg-gray-300 transition-colors" data-index="1" aria-label="Slide 2"></button>
+                            <button class="w-3 h-3 rounded-full bg-gray-300 transition-colors" data-index="2" aria-label="Slide 3"></button>
+                        </div>
+                        <button id="next-testimonial" class="w-12 h-12 rounded-full bg-eitDark text-eitLime flex items-center justify-center shadow-md hover:bg-eitDark/90 transition-colors" aria-label="Next Testimonial">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEWS / DIGITAL TIPS -->
+        <section class="py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16" data-animate>
+                    <span class="text-xs font-bold uppercase tracking-widest text-eitCoral bg-eitCoral/10 px-3 py-1 rounded-full">Insights</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-eitDark mt-3">Digital Tips & Insights</h2>
+                    <p class="text-eitText/70 mt-3">Helpful advice to enhance your digital presence and productivity.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <article class="bg-white rounded-3xl overflow-hidden shadow-lg border border-eitDark/5 flex flex-col justify-between group hover:-translate-y-2 transition-all duration-300" data-animate>
+                        <div>
+                            <div class="h-56 bg-eitDark relative overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&w=600&q=80" alt="Tip 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <span class="absolute top-4 left-4 bg-eitLime text-eitDark text-xs font-bold px-3 py-1 rounded-full">Business</span>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-eitDark mb-3 group-hover:text-eitCoral transition-colors">
+                                    5 Things Every Small Business Should Have Online
+                                </h3>
+                                <p class="text-eitText/70 text-sm leading-relaxed">
+                                    Discover the essential digital assets your business needs to attract customers and build trust online.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="p-6 pt-0">
+                            <a href="https://wa.me/2349116359182?text=Hello%20Emmanuel,%20I%20read%20your%20article%20on%20small%20business%20online%20assets." target="_blank" rel="noopener noreferrer" class="text-eitDark font-bold text-sm inline-flex items-center gap-2 hover:text-eitCoral">
+                                <span>Read More</span>
+                                <i class="fa-solid fa-arrow-right text-xs"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="bg-white rounded-3xl overflow-hidden shadow-lg border border-eitDark/5 flex flex-col justify-between group hover:-translate-y-2 transition-all duration-300" data-animate>
+                        <div>
+                            <div class="h-56 bg-eitDark relative overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?auto=format&fit=crop&w=600&q=80" alt="Tip 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <span class="absolute top-4 left-4 bg-eitLime text-eitDark text-xs font-bold px-3 py-1 rounded-full">Branding</span>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-eitDark mb-3 group-hover:text-eitCoral transition-colors">
+                                    Why Professional Branding Matters for Your Business
+                                </h3>
+                                <p class="text-eitText/70 text-sm leading-relaxed">
+                                    Learn how consistent visual identity and great logo design elevate your brand value in competitive markets.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="p-6 pt-0">
+                            <a href="https://wa.me/2349116359182?text=Hello%20Emmanuel,%20I%20read%20your%20article%20on%20professional%20branding." target="_blank" rel="noopener noreferrer" class="text-eitDark font-bold text-sm inline-flex items-center gap-2 hover:text-eitCoral">
+                                <span>Read More</span>
+                                <i class="fa-solid fa-arrow-right text-xs"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="bg-white rounded-3xl overflow-hidden shadow-lg border border-eitDark/5 flex flex-col justify-between group hover:-translate-y-2 transition-all duration-300" data-animate>
+                        <div>
+                            <div class="h-56 bg-eitDark relative overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80" alt="Tip 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <span class="absolute top-4 left-4 bg-eitLime text-eitDark text-xs font-bold px-3 py-1 rounded-full">Web Design</span>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-eitDark mb-3 group-hover:text-eitCoral transition-colors">
+                                    How a Simple Website Can Help Your Business
+                                </h3>
+                                <p class="text-eitText/70 text-sm leading-relaxed">
+                                    Explore why having a clean portfolio or business website is your 24/7 salesperson for client acquisition.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="p-6 pt-0">
+                            <a href="https://wa.me/2349116359182?text=Hello%20Emmanuel,%20I%20read%20your%20article%20on%20website%20benefits." target="_blank" rel="noopener noreferrer" class="text-eitDark font-bold text-sm inline-flex items-center gap-2 hover:text-eitCoral">
+                                <span>Read More</span>
+                                <i class="fa-solid fa-arrow-right text-xs"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="py-24 bg-white border-y border-eitDark/5">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16" data-animate>
+                    <span class="text-xs font-bold uppercase tracking-widest text-eitCoral bg-eitCoral/10 px-3 py-1 rounded-full">Get In Touch</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-eitDark mt-3">Let's Build Something Great Together</h2>
+                    <p class="text-eitText/70 mt-3">Have a design project, digital task, website idea or computer-related service you need help with? Let's talk.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    
+                    <!-- Contact Info -->
+                    <div class="lg:col-span-5 flex flex-col gap-6" data-animate>
+                        <div class="bg-eitBg p-8 rounded-3xl border border-eitDark/5 shadow-md flex flex-col gap-6">
+                            <h3 class="text-2xl font-bold text-eitDark">Contact Information</h3>
+                            <p class="text-eitText/80 text-sm leading-relaxed">
+                                Feel free to reach out through any of the channels below or fill out the form to instantly message via WhatsApp.
+                            </p>
+
+                            <div class="space-y-4 pt-2">
+                                <div class="flex items-start gap-4">
+                                    <div class="w-12 h-12 rounded-2xl bg-eitDark text-eitLime flex items-center justify-center font-bold flex-shrink-0">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </div>
+                                    <div>
+                                        <span class="text-xs text-gray-500 font-semibold">Primary Email</span>
+                                        <a href="mailto:ogedengbeemmanuel47@gmail.com" class="font-bold text-eitDark text-sm hover:text-eitCoral block">ogedengbeemmanuel47@gmail.com</a>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-4">
+                                    <div class="w-12 h-12 rounded-2xl bg-eitDark text-eitLime flex items-center justify-center font-bold flex-shrink-0">
+                                        <i class="fa-solid fa-envelope-open-text"></i>
+                                    </div>
+                                    <div>
+                                        <span class="text-xs text-gray-500 font-semibold">Professional Email</span>
+                                        <a href="mailto:ogedengbe.emmanuel@outlook.com" class="font-bold text-eitDark text-sm hover:text-eitCoral block">ogedengbe.emmanuel@outlook.com</a>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-4">
+                                    <div class="w-12 h-12 rounded-2xl bg-eitDark text-eitLime flex items-center justify-center font-bold flex-shrink-0">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </div>
+                                    <div>
+                                        <span class="text-xs text-gray-500 font-semibold">WhatsApp / Phone</span>
+                                        <a href="https://wa.me/2349116359182" target="_blank" rel="noopener noreferrer" class="font-bold text-eitDark text-sm hover:text-eitCoral block">09116359182</a>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-4">
+                                    <div class="w-12 h-12 rounded-2xl bg-eitDark text-eitLime flex items-center justify-center font-bold flex-shrink-0">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+                                    <div>
+                                        <span class="text-xs text-gray-500 font-semibold">Location</span>
+                                        <p class="font-bold text-eitDark text-sm">Ibadan, Oyo State, Nigeria</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-4">
+                                    <div class="w-12 h-12 rounded-2xl bg-eitDark text-eitLime flex items-center justify-center font-bold flex-shrink-0">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </div>
+                                    <div>
+                                        <span class="text-xs text-gray-500 font-semibold">LinkedIn</span>
+                                        <a href="https://linkedin.com/in/emmanuel-itunu-ogedengbe" target="_blank" rel="noopener noreferrer" class="font-bold text-eitDark text-sm hover:text-eitCoral block">emmanuel-itunu-ogedengbe</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="lg:col-span-7" data-animate>
+                        <form id="whatsapp-form" class="bg-eitBg p-8 sm:p-10 rounded-3xl border border-eitDark/5 shadow-md flex flex-col gap-6">
+                            <h3 class="text-2xl font-bold text-eitDark">Send a Message</h3>
+
+                            <div class="flex flex-col gap-2">
+                                <label for="name" class="text-xs font-bold uppercase tracking-wider text-eitDark">Your Name *</label>
+                                <input type="text" id="name" required class="bg-white px-4 py-3.5 rounded-2xl border border-eitDark/10 focus:outline-none focus:border-eitDark text-sm" placeholder="Enter your full name">
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div class="flex flex-col gap-2">
+                                    <label for="email" class="text-xs font-bold uppercase tracking-wider text-eitDark">Your Email *</label>
+                                    <input type="email" id="email" required class="bg-white px-4 py-3.5 rounded-2xl border border-eitDark/10 focus:outline-none focus:border-eitDark text-sm" placeholder="Enter your email">
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <label for="phone" class="text-xs font-bold uppercase tracking-wider text-eitDark">Your Phone *</label>
+                                    <input type="tel" id="phone" required class="bg-white px-4 py-3.5 rounded-2xl border border-eitDark/10 focus:outline-none focus:border-eitDark text-sm" placeholder="Enter your phone number">
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col gap-2">
+                                <label for="service" class="text-xs font-bold uppercase tracking-wider text-eitDark">Service Needed *</label>
+                                <select id="service" required class="bg-white px-4 py-3.5 rounded-2xl border border-eitDark/10 focus:outline-none focus:border-eitDark text-sm">
+                                    <option value="" disabled selected>Select a service</option>
+                                    <option value="Graphic Design">Graphic Design (Logo, Flyer, Banner, etc.)</option>
+                                    <option value="Computer & Digital Services">Computer & Digital Services (Word, Excel, Typing)</option>
+                                    <option value="Web Design">Web Design (Portfolio, Business Website)</option>
+                                    <option value="Business & Digital Support">Business & Digital Support (Research, Registration)</option>
+                                    <option value="Other Digital Solutions">Other Digital Solutions</option>
+                                </select>
+                            </div>
+
+                            <div class="flex flex-col gap-2">
+                                <label for="message" class="text-xs font-bold uppercase tracking-wider text-eitDark">Your Message *</label>
+                                <textarea id="message" rows="5" required class="bg-white px-4 py-3.5 rounded-2xl border border-eitDark/10 focus:outline-none focus:border-eitDark text-sm" placeholder="Tell me about your project or request..."></textarea>
+                            </div>
+
+                            <button type="submit" class="bg-eitDark text-eitLime hover:bg-eitDark/90 py-4 rounded-2xl font-bold text-base shadow-lg transition-all flex items-center justify-center gap-3">
+                                <span>Send Message via WhatsApp</span>
+                                <i class="fa-brands fa-whatsapp text-xl"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-eitDark text-white pt-20 pb-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 pb-16 border-b border-white/10">
+                
+                <div class="lg:col-span-5 flex flex-col gap-6">
+                    <div class="flex items-center gap-2">
+                        <div class="w-10 h-10 rounded-xl bg-eitLime text-eitDark flex items-center justify-center font-extrabold text-xl">
+                            EIT
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="font-extrabold text-lg text-white tracking-tight leading-none">EIT Digital</span>
+                            <span class="text-xs font-semibold text-eitLime tracking-widest uppercase">Solutions</span>
+                        </div>
+                    </div>
+                    <p class="text-white/70 text-sm leading-relaxed max-w-sm">
+                        Creative Design, Digital Services & Technology Solutions. Helping individuals and businesses turn ideas into professional reality.
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <a href="https://linkedin.com/in/emmanuel-itunu-ogedengbe" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-white/10 hover:bg-eitLime hover:text-eitDark flex items-center justify-center transition-colors" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://wa.me/2349116359182" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-white/10 hover:bg-eitLime hover:text-eitDark flex items-center justify-center transition-colors" aria-label="WhatsApp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a href="mailto:ogedengbeemmanuel47@gmail.com" class="w-10 h-10 rounded-xl bg-white/10 hover:bg-eitLime hover:text-eitDark flex items-center justify-center transition-colors" aria-label="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-2 flex flex-col gap-4">
+                    <h4 class="text-lg font-bold text-eitLime">Quick Links</h4>
+                    <ul class="space-y-2.5 text-sm font-medium text-white/80">
+                        <li><a href="#home" class="hover:text-eitLime transition-colors">Home</a></li>
+                        <li><a href="#about" class="hover:text-eitLime transition-colors">About</a></li>
+                        <li><a href="#services" class="hover:text-eitLime transition-colors">Services</a></li>
+                        <li><a href="#portfolio" class="hover:text-eitLime transition-colors">Portfolio</a></li>
+                        <li><a href="#skills" class="hover:text-eitLime transition-colors">Skills</a></li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-2 flex flex-col gap-4">
+                    <h4 class="text-lg font-bold text-eitLime">Services</h4>
+                    <ul class="space-y-2.5 text-sm font-medium text-white/80">
+                        <li><a href="#services" class="hover:text-eitLime transition-colors">Graphic Design</a></li>
+                        <li><a href="#services" class="hover:text-eitLime transition-colors">Computer Services</a></li>
+                        <li><a href="#services" class="hover:text-eitLime transition-colors">Web Design</a></li>
+                        <li><a href="#services" class="hover:text-eitLime transition-colors">Digital Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-3 flex flex-col gap-4">
+                    <h4 class="text-lg font-bold text-eitLime">Contact Info</h4>
+                    <ul class="space-y-2.5 text-sm font-medium text-white/80">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-eitLime"></i> Ibadan, Oyo State, Nigeria</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-envelope text-eitLime"></i> ogedengbeemmanuel47@gmail.com</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-phone text-eitLime"></i> 09116359182</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-white/60 gap-4">
+                <p id="copyright-text">&copy; 2026 EIT Digital Solutions. All Rights Reserved.</p>
+                <p>Designed & Developed by EIT Digital Solutions</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON WITH TOOLTIP -->
+    <div class="fixed bottom-6 right-6 z-50 group flex items-center">
+        <div class="absolute right-full mr-3 bg-white text-eitDark text-xs font-bold px-3 py-1.5 rounded-xl shadow-lg border border-eitDark/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
+            Chat with me on WhatsApp
+        </div>
+        <a href="https://wa.me/2349116359182?text=Hello%20EIT%20Digital%20Solutions,%20I%20would%20like%20to%20chat%20with%20you." target="_blank" rel="noopener noreferrer" class="w-14 h-14 rounded-full bg-[#25D366] text-white flex items-center justify-center text-2xl shadow-2xl hover:scale-110 transition-transform animate-bounce duration-1000" aria-label="Chat with me on WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Mobile Navigation Toggle
+            const menuBtn = document.getElementById('menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+
+            if (menuBtn && mobileMenu) {
+                menuBtn.addEventListener('click', () => {
+                    const expanded = menuBtn.getAttribute('aria-expanded') === 'true';
+                    menuBtn.setAttribute('aria-expanded', !expanded);
+                    mobileMenu.classList.toggle('hidden');
+                    mobileMenu.classList.toggle('flex');
+                });
+
+                mobileLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        mobileMenu.classList.remove('flex');
+                        menuBtn.setAttribute('aria-expanded', 'false');
+                    });
+                });
+            }
+
+            // 2. Sticky Navbar Shrink on Scroll
+            const header = document.getElementById('header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.classList.add('py-2', 'shadow-md');
+                    header.classList.remove('py-4');
+                } else {
+                    header.classList.remove('py-2', 'shadow-md');
+                    header.classList.add('py-4');
+                }
+            });
+
+            // 3. Scroll Animations with Intersection Observer & Skill Bars
+            const observerOptions = {
+                threshold: 0.15,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        
+                        // Trigger skill bar widths
+                        const skillBars = entry.target.querySelectorAll('.skill-bar');
+                        skillBars.forEach(bar => {
+                            const targetWidth = bar.getAttribute('data-width');
+                            bar.style.width = targetWidth;
+                        });
+
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('[data-animate]').forEach(el => {
+                observer.observe(el);
+            });
+
+            const skillsSection = document.getElementById('skills');
+            if (skillsSection) {
+                observer.observe(skillsSection);
+            }
+
+            // 4. Portfolio Filtering
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterBtns.forEach(b => {
+                        b.classList.remove('bg-eitDark', 'text-eitLime', 'shadow-md');
+                        b.classList.add('bg-eitBg', 'text-eitText');
+                    });
+                    btn.classList.remove('bg-eitBg', 'text-eitText');
+                    btn.classList.add('bg-eitDark', 'text-eitLime', 'shadow-md');
+
+                    const filterValue = btn.getAttribute('data-filter');
+
+                    portfolioItems.forEach(item => {
+                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                            item.style.display = 'block';
+                            setTimeout(() => { item.style.opacity = '1'; item.style.transform = 'scale(1)'; }, 50);
+                        } else {
+                            item.style.opacity = '0';
+                            item.style.transform = 'scale(0.95)';
+                            setTimeout(() => { item.style.display = 'none'; }, 300);
+                        }
+                    });
+                });
+            });
+
+            // 5. Portfolio Modal / Lightbox
+            const modal = document.getElementById('portfolio-modal');
+            const modalImg = document.getElementById('modal-img');
+            const modalTitle = document.getElementById('modal-title');
+            const modalCategory = document.getElementById('modal-category');
+            const modalDesc = document.getElementById('modal-desc');
+            const modalTools = document.getElementById('modal-tools');
+            const modalClose = document.getElementById('modal-close');
+
+            portfolioItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    const img = item.querySelector('img').src;
+                    const title = item.getAttribute('data-title');
+                    const category = item.querySelector('span').textContent;
+                    const desc = item.getAttribute('data-desc');
+                    const tools = item.getAttribute('data-tools');
+
+                    modalImg.src = img;
+                    modalTitle.textContent = title;
+                    modalCategory.textContent = category;
+                    modalDesc.textContent = desc;
+                    modalTools.textContent = tools;
+
+                    modal.classList.remove('hidden');
+                    modal.classList.add('flex');
+                });
+            });
+
+            if (modalClose) {
+                modalClose.addEventListener('click', () => {
+                    modal.classList.add('hidden');
+                    modal.classList.remove('flex');
+                });
+            }
+
+            if (modal) {
+                modal.addEventListener('click', (e) => {
+                    if (e.target === modal) {
+                        modal.classList.add('hidden');
+                        modal.classList.remove('flex');
+                    }
+                });
+            }
+
+            // 6. Testimonial Carousel
+            const track = document.getElementById('testimonial-track');
+            const slides = track ? Array.from(track.children) : [];
+            const nextBtn = document.getElementById('next-testimonial');
+            const prevBtn = document.getElementById('prev-testimonial');
+            const dots = document.querySelectorAll('#carousel-dots button');
+            let currentIndex = 0;
+
+            function updateCarousel(index) {
+                if (!track) return;
+                track.style.transform = `translateX(-${index * 100}%)`;
+                dots.forEach((dot, idx) => {
+                    if (idx === index) {
+                        dot.classList.remove('bg-gray-300');
+                        dot.classList.add('bg-eitDark');
+                    } else {
+                        dot.classList.remove('bg-eitDark');
+                        dot.classList.add('bg-gray-300');
+                    }
+                });
+                currentIndex = index;
+            }
+
+            if (nextBtn) {
+                nextBtn.addEventListener('click', () => {
+                    currentIndex = (currentIndex + 1) % slides.length;
+                    updateCarousel(currentIndex);
+                });
+            }
+
+            if (prevBtn) {
+                prevBtn.addEventListener('click', () => {
+                    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+                    updateCarousel(currentIndex);
+                });
+            }
+
+            dots.forEach(dot => {
+                dot.addEventListener('click', () => {
+                    const index = parseInt(dot.getAttribute('data-index'));
+                    updateCarousel(index);
+                });
+            });
+
+            setInterval(() => {
+                if (slides.length > 0) {
+                    currentIndex = (currentIndex + 1) % slides.length;
+                    updateCarousel(currentIndex);
+                }
+            }, 6000);
+
+            // 7. Contact Form WhatsApp Integration
+            const whatsappForm = document.getElementById('whatsapp-form');
+            if (whatsappForm) {
+                whatsappForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    const name = document.getElementById('name').value.trim();
+                    const email = document.getElementById('email').value.trim();
+                    const phone = document.getElementById('phone').value.trim();
+                    const service = document.getElementById('service').value;
+                    const message = document.getElementById('message').value.trim();
+
+                    const whatsappMessage = `Hello EIT Digital Solutions,
+
+My name is ${name}.
+
+I am interested in:
+${service}
+
+My message:
+${message}
+
+Email:
+${email}
+
+Phone:
+${phone}
+
+Please get back to me.`;
+
+                    const encodedMessage = encodeURIComponent(whatsappMessage);
+                    const whatsappURL = `https://wa.me/2349116359182?text=${encodedMessage}`;
+
+                    window.open(whatsappURL, '_blank');
+                });
+            }
+
+            // 8. Dynamic Copyright Year
+            const copyrightText = document.getElementById('copyright-text');
+            if (copyrightText) {
+                const currentYear = new Date().getFullYear();
+                copyrightText.innerHTML = `&copy; ${currentYear} EIT Digital Solutions. All Rights Reserved.`;
+            }
+        });
+    </script>
+</body>
+</html>
